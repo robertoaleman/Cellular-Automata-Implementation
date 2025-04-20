@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cellular Automata Implementation Author Roberto Alemán, ventics.com</title>
+    <style>
+	body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+canvas {
+    border: 1px solid black;
+    display: block;
+    margin: 1rem auto;
+}
+
+button, select {
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+}
+	</style>
+    
+</head>
+<body>
+  <h1>Cellular Automata Implementation</h1>
+Author : Roberto Alemán, <a href="https://ventics.com/">ventics.com</a>
+    <div>
+        <button id="start">Iniciar</button>
+        <button id="stop">Detener</button>
+        <select id="automata-type">
+            <option value="classical">Classic (Game of Life)</option>
+            <option value="continuous">Continuous</option>
+            <option value="probabilistic">Probabilistic</option>
+            <option value="non-uniform">No Uniform</option>
+            <option value="asynchronous">Asynchronous</option>
+            <option value="quantum" disabled>Quantum (Not Implemented, do you need it? write me)</option>
+            <option value="reversible">Reversible</option>
+        </select>
+    </div>
+    <canvas id="grid" width="500" height="500"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
